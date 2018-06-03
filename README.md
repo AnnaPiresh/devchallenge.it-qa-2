@@ -1,9 +1,16 @@
 # devchallenge.it-qa-2
 Test task for DevChallenge 12
 
-## Requirements
+## Test documentation
 
-- Node.js & Npm
+- OpenWeatherMap [Test Plan](https://github.com/AnnaPiresh/devchallenge.it-qa-2/blob/master/TestPlan.docx)
+- OpenWeatherMap [Checklist](https://github.com/AnnaPiresh/devchallenge.it-qa-2/blob/master/Checklist.xlsx)
+- OpenWeatherMap Test Report
+- OpenWeatherMap [List Of Issues](https://github.com/AnnaPiresh/devchallenge.it-qa-2/blob/master/OpenWeatherMap%20bugs.docx)
+
+## System requirements
+
+- Node.js & Npm installed
 
 ## Installation
 
@@ -21,9 +28,3 @@ Test task for DevChallenge 12
 
 Using CLI navigate to a directory with a project and run the following command: ```npm test```
 
-## Test documentation
-
-- OpenWeatherMap [Test Plan](https://github.com/AnnaPiresh/devchallenge.it-qa-2/blob/master/TestPlan.docx)
-- OpenWeatherMap [Checklist](https://github.com/AnnaPiresh/devchallenge.it-qa-2/blob/master/Checklist.xlsx)
-- OpenWeatherMap Test Report
-- OpenWeatherMap [List Of Issues](https://github.com/AnnaPiresh/devchallenge.it-qa-2/blob/master/OpenWeatherMap%20bugs.docx)
