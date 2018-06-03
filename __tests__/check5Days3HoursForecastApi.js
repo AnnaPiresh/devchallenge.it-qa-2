@@ -38,22 +38,26 @@ describe('Verify weather forecast data can be obtained', function() {
   });
 
   it(`Weather forecast can be received using geographical coordinates`, function(){
+    const city = data.randomCity;
+
     return frisby
-      .get(`${api.weather}/forecast?lat=${data.randomCity.coord.lat}&lon=${data.randomCity.coord.lon}&APPID=${data.randomAppId}`)
+      .get(`${api.weather}/forecast?lat=${city.coord.lat}&lon=${city.coord.lon}&APPID=${data.randomAppId}`)
       .expect('status', 200)
       .expect('header', 'content-type', 'application/json; charset=utf-8')
       .then(function (result) {
-        expect(result.json.city.name).toBe(data.randomCity.name);
+        expect(result.json.city.name).toBe(city.name);
       });
   });
 
   it(`Weather forecast can be received using zipcode`, function(){
+    const city = data.randomCity;
+
     return frisby
-      .get(`${api.weather}/forecast?zip=${data.randomCity.zip},${data.randomCity.country}&APPID=${data.randomAppId}`)
+      .get(`${api.weather}/forecast?zip=${city.zip},${city.country}&APPID=${data.randomAppId}`)
       .expect('status', 200)
       .expect('header', 'content-type', 'application/json; charset=utf-8')
       .then(function (result) {
-        expect(result.json.city.name).toBe(data.randomCity.name);
+        expect(result.json.city.name).toBe(city.name);
       });
   });
 });
