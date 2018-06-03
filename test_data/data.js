@@ -53,6 +53,64 @@ const cities = [
   }
 ];
 
+const trigger = {
+  "time_period":{
+    "start":{
+      "expression":"after",
+      "amount":132000000
+    },
+    "end":{
+      "expression":"after",
+      "amount":432000000
+    }
+  },
+  "conditions":[
+    {
+      "name":"temp",
+      "expression":"$gt",
+      "amount":299
+    }
+  ],
+  "area":[
+    {
+      "type":"Point",
+      "coordinates":[
+        53,
+        37
+      ]
+    }
+  ]
+};
+
+const updatedTrigger = {
+  "time_period":{
+    "start":{
+      "expression":"after",
+      "amount":230000000
+    },
+    "end":{
+      "expression":"after",
+      "amount":260000000
+    }
+  },
+  "conditions":[
+    {
+      "name":"wind_direction",
+      "expression":"$gt",
+      "amount":299
+    }
+  ],
+  "area":[
+    {
+      "type":"Point",
+      "coordinates":[
+        53,
+        37
+      ]
+    }
+  ]
+};
+
 const layers = ['clouds_new', 'precipitation_new', 'pressure_new', 'wind_new', 'temp_new'];
 
 const randomAppId = APPIDS[Math.floor(Math.random() * APPIDS.length)];
@@ -62,4 +120,4 @@ const randomIds = function(){
   return `${cities[Math.floor(Math.random() * cities.length)].id},${cities[Math.floor(Math.random() * cities.length)].id}`;
 }();
 
-module.exports = {randomAppId, randomCity, rectangleZone, randomIds, layers};
+module.exports = {randomAppId, randomCity, rectangleZone, randomIds, layers, trigger, updatedTrigger};
