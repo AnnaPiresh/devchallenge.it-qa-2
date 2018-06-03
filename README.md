@@ -5,7 +5,7 @@ Test task for DevChallenge 12
 
 - OpenWeatherMap [Test Plan](https://github.com/AnnaPiresh/devchallenge.it-qa-2/blob/master/TestPlan.docx)
 - OpenWeatherMap [Checklist](https://github.com/AnnaPiresh/devchallenge.it-qa-2/blob/master/Checklist.xlsx)
-- OpenWeatherMap Test Report
+- OpenWeatherMap [Test Report](https://github.com/AnnaPiresh/devchallenge.it-qa-2/blob/master/TestReport.docx)
 - OpenWeatherMap [List Of Issues](https://github.com/AnnaPiresh/devchallenge.it-qa-2/blob/master/OpenWeatherMap%20bugs.docx)
 
 ## System requirements
