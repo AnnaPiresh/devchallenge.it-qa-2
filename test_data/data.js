@@ -53,6 +53,8 @@ const cities = [
   }
 ];
 
+const layers = ['clouds_new', 'precipitation_new', 'pressure_new', 'wind_new', 'temp_new'];
+
 const randomAppId = APPIDS[Math.floor(Math.random() * APPIDS.length)];
 const randomCity = cities[Math.floor(Math.random() * cities.length)];
 const rectangleZone = `12,32,15,37,10`;
@@ -60,4 +62,4 @@ const randomIds = function(){
   return `${cities[Math.floor(Math.random() * cities.length)].id},${cities[Math.floor(Math.random() * cities.length)].id}`;
 }();
 
-module.exports = {randomAppId, randomCity, rectangleZone, randomIds};
+module.exports = {randomAppId, randomCity, rectangleZone, randomIds, layers};
